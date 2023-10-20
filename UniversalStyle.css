@@ -4,14 +4,26 @@ body {
 }
 
 header img {
-	max-width: 70px;
+	max-width: 150px;
 	float: left;
+}
+
+.helasidan {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	grid-template-areas: 
+	"header header header"
+	"mainpart mainpart ."
+	"footer footer footer";
 }
 
 header {
 	background-color: aquamarine;
 	height: 100px;
-	width: 100%;
+	width: auto;
+	grid-area: header;
 }
 
 nav ul {
@@ -27,4 +39,17 @@ nav ul li a {
 	display: block;
 	color: blue;
 	padding: 20px;
+}
+
+.mainpart{
+	display: grid;
+ 	grid-template-columns: auto;
+ 	grid-template-rows: auto;
+ 	padding: 10px;
+	grid-area: mainpart;
+	text-align: center;
+}
+
+footer{
+	grid-area: footer;
 }
