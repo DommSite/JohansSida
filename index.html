@@ -1,67 +1,72 @@
 <!DOCTYPE html>
+<!--Deklarerar koden som doctype html vilket behövs för att webbläsaren ska kunna fatta vad för slags kod den ska läsa-->
 <html lang="sv">
+	<!--förklarar vilket språk av text som koden är skriven i, behövs för att se till att alla unika bokstäver fortfarande kan läsas-->
 	<head>
+		<!--typ deklarationer som behövs för att hemsidan ska fungera-->
 		<meta charset="UTF-8" />
+		<!--beskriver vilket textspråk som används-->
 		<title>Johans_Sida</title>
+		<!--vad hemsidan heter när man bara ser fliken-->
 		<link href="UniversalStyle.css" rel="stylesheet" />
+		<!--kopplar html koden till CSS så att all styling fungerar-->
 
 		<link
 			href="https://upload.wikimedia.org/wikipedia/commons/b/b1/Hot_dog_with_mustard.png"
 			rel="icon"
 			type="image/x-icon"
 		/>
+		<!--detta ska visa vilken ikon som visas på fliken-->
 	</head>
 	<body>
-		<div class="helasidan">
-			<header>
-				<nav>
-					<a href="index.html"
-						><img
-							src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Hot_dog_with_mustard.png"
-					/></a>
-					<ul>
+		<header>
+			<nav>
+				<a href="index.html"
+					><img
+						src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Hot_dog_with_mustard.png"
+						alt="Varmkorv som tar dig till första sidan"
+				/></a>
+				<ul>
+					<li>
+						<a href="MinaKonton.html">Mina konton</a>
+					</li>
 
-						<li>
-							<a href="MinaKonton.html">Mina konton</a>
-						</li>
-
-						<li>
-							<a href="OmMig.html">Sida om mig</a>
-						</li>
-
-						<li>
-							<a href="MinaIntressen.html">Sida om mina intressen</a>
-						</li>
-						<li>
-							<a href="https://teknikum.se/">Teknikums hemsida</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<main>
-				<div class="mainpart">
-					<p class="Intro">
-						Jag heter Johan Johansson, jag går det tekniska programmet på teknikum med
-						inriktningen Information och medieteknik.
-					</p>
-					<p class="Infoomsidan">
-						Denna sidan handlar om mig och har lite olika delar typ som en
-						<a href="MinaIntressen.html">sida om mina intressen</a>, en
-						<a href="OmMig.html">sida om mig</a>, en sida om
-						<a href="MinaKonton.html">mina konton</a> och en länk till
+					<li>
+						<a href="OmMig.html">Sida om mig</a>
+					</li>
+					<li>
 						<a href="https://teknikum.se/">Teknikums hemsida</a>
-					</p>
-				</div>
-			</main>
-
-			<footer>
-				<h4>Mina kontaktuppgifter</h4>
-				<p class="mittnummer">
-					076-820 20 08
-					<br />
-					<a href="jojo06002@utb.vaxjo.se"> jojo06002@utb.vaxjo.se </a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="mainpart">
+				<p class="Intro">Detta är en hemsida om mig, Johan Johansson.</p>
+				<p class="Infoomsidan">
+					Denna sidan handlar om mig och har lite olika delar typ som en
+					<a href="OmMig.html">sida om mig</a>, en sida om
+					<a href="MinaKonton.html">mina konton</a> och en länk till
+					<a href="https://teknikum.se/">Teknikums hemsida</a>
 				</p>
-			</footer>
-		</div>
+			</div>
+			<div class="bilder">
+				<img
+					src="https://media.istockphoto.com/id/155915641/sv/foto/grilled-barbecue-sausage.jpg?s=612x612&w=0&k=20&c=0oBrbRPkxVpaUQ_KVWPEDgADzahJixEeJL3b8Z3novg="
+					alt="En tysk släktning av varmkorven"
+				/>
+			</div>
+		</main>
+
+		<footer>
+			<p>Hemsidskapare: Johan Johansson</p>
+			<p>Skolan jag har blivit utbildad på heter Teknikum</p>
+			<h4>Mina kontaktuppgifter</h4>
+			<p class="mitt nummer">
+				076-820 20 08
+				<br />
+				<a href="jojo06002@utb.vaxjo.se"> jojo06002@utb.vaxjo.se </a>
+			</p>
+		</footer>
 	</body>
 </html>

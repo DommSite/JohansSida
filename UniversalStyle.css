@@ -1,39 +1,22 @@
 body {
 	background-color: grey;
 	color: aqua;
+	height: 99vh;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: auto 1fr auto auto;
+	grid-template-areas:
+		"header header"
+		" mainpart bilder"
+		"footer footer";
+	grid-gap: 10px;
+	border-color: black;
+	border-style: dotted;
 }
 
 header img {
 	max-width: 150px;
 	float: left;
-}
-
-.helasidan {
-	display: grid;
-
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	grid-gap: 10px;
-	grid-template-areas:
-		"header header header"
-		"mainpart mainpart ."
-		"footer footer footer";
-	border-color: black;
-	border-style: dotted;
-}
-
-.ommigsida {
-	display: grid;
-
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	grid-gap: 10px;
-	grid-template-areas:
-		"header header header"
-		"mainpart mainpart ."
-		"footer footer footer";
-	border-color: black;
-	border-style: dotted;
 }
 
 header {
@@ -45,14 +28,15 @@ header {
 	border-style: dotted;
 }
 
-nav{
+nav {
 	float: left;
 	padding: 10px;
 	position: relative;
 	display: block;
 }
-
-
+body ul li {
+	list-style: none;
+}
 nav ul {
 	float: left;
 }
@@ -108,17 +92,11 @@ td:nth-child(odd) {
 td:nth-child(even) {
 	background-color: cornsilk;
 }
-/*tr:nth-child(odd) td:nth-child(even) {
-	background: lightslategray;
-}
-*/
+
 th {
 	background-color: blue;
 }
-/*tr:nth-child(odd) td:nth-child(odd) {
-	background-color: black;
-}
-*/
+
 td:nth-child(1) {
 	background-color: blueviolet !important;
 }
