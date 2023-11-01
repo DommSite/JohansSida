@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<title>OmMig</title>
 		<link href="UniversalStyle.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link
 			href="https://upload.wikimedia.org/wikipedia/commons/b/b1/Hot_dog_with_mustard.png"
 			rel="icon"
@@ -11,31 +12,39 @@
 		/>
 	</head>
 	<body>
-		<header>
-			<nav>
-				<a href="index.html"
-					><img
-						src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Hot_dog_with_mustard.png"
-						alt="Varmkorv som tar dig till första sidan"
-				/></a>
-				<ul>
-					<li>
-						<a href="MinaKonton.html">Mina konton</a>
-					</li>
-					<li>
-						<a href="OmMig.html">Sida om mig</a>
-					</li>
-					<li>
-						<a href="https://teknikum.se/">Teknikums hemsida</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		<div class="helasidan">
+			<header><!--är ett element med en huvudmeny som kan ta dig överallt-->
+				<nav><!--I nav så har jag allting som man navigerar sig med, dvs alla länkar jag använder-->
+					
+					<ul><!--har en oordnad lista för att ha alla de övriga länkarna till de andra sidorna, den är oordnad för jag behöver inte rada upp dem-->
+						<li>
+							<a href="index.html"
+						><img
+							src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Hot_dog_with_mustard.png"
+							alt="Varmkorv som tar dig till första sidan"
+					/><!--har en img tagg för att ha fotot och en kort förklaring på vad fotot är-->
+				</a><!--Har ett <a href> element för att ha en bild i huvudmenyn som tar dig till starthemsidan.-->
+						</li>
+						<li>
+							<a href="MinaKonton.html">Mina konton</a>
+						</li>
+	
+						<li>
+							<a href="OmMig.html">Sida om mig</a>
+						</li>
+						<li>
+							<a href="https://teknikum.se/">Teknikums hemsida</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
 		<main>
-			<div class="mainpart">
+			<div class="huvuddelen">
+				<section>
 				<p>Hej, jag heter Johan. Jag är 17 år, jag går teknik på teknikum.</p>
 				<p>Min familj består av 2 systrar, en mamma och en katt.</p>
 				<p>Jag behövde ha en tabell så här nedan är en tabell med mina betyg genom åren</p>
+			</section>
 			</div>
 			<table>
 				<caption>
@@ -112,17 +121,17 @@
 					<td>N/A</td>
 					<td>N/A</td>
 					<td>B</td>
-					<td>FT</td>
+					<td>N/A</td>
 					<td>N/A</td>
 					<td>N/A</td>
 					<td>B</td>
-					<td>FT</td>
+					<td>N/A</td>
 					<td>A</td>
 					<td>A,B</td>
 					<td>N/A</td>
 					<td>N/A</td>
-					<td>FT</td>
-					<td>FT</td>
+					<td>N/A</td>
+					<td>N/A</td>
 					<td>N/A</td>
 					<td>D</td>
 					<td>B</td>
@@ -152,18 +161,24 @@
 					<td>16.6176471</td>
 				</tr>
 			</table>
-			<p>N/A = Har inte ämnet längre</p>
-			<p>FT = Har inte blivit klar med kursen än</p>
+			<p>N/A = Har inte ämnet längre eller är inte klar med kursen</p>
 		</main>
 		<footer>
+			<div class="fotdel">
+			<section>
 			<p>Hemsidskapare: Johan Johansson</p>
 			<p>Skolan jag har blivit utbildad på heter Teknikum</p>
+		</section>
+		<section>
 			<h4>Mina kontaktuppgifter</h4>
-			<p class="mittnummer">
+			<p class="mitt nummer">
 				076-820 20 08
 				<br />
 				<a href="jojo06002@utb.vaxjo.se"> jojo06002@utb.vaxjo.se </a>
 			</p>
+		</section>
+	</div>
 		</footer>
+	</div>
 	</body>
 </html>

@@ -11,23 +11,28 @@
 		<link href="UniversalStyle.css" rel="stylesheet" />
 		<!--kopplar html koden till CSS så att all styling fungerar-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+		<!--kollar hur stor användarens skärm är så att vh funkar som det ska-->
 		<link
-			href="https://upload.wikimedia.org/wikipedia/commons/b/b1/Hot_dog_with_mustard.png"
 			rel="icon"
 			type="image/x-icon"
+			href="https://upload.wikimedia.org/wikipedia/commons/b/b1/Hot_dog_with_mustard.png"
 		/>
 		<!--detta ska visa vilken ikon som visas på fliken-->
 	</head>
-	<body>
-		<header>
-			<nav>
-				<a href="index.html"
+	<body><!--I body så finns allting som man faktiskt ser på hemsidan-->
+		<div class="helasidan">
+		<header><!--är ett element med en huvudmeny som kan ta dig överallt-->
+			<nav><!--I nav så har jag allting som man navigerar sig med, dvs alla länkar jag använder-->
+				
+				<ul><!--har en oordnad lista för att ha alla de övriga länkarna till de andra sidorna, den är oordnad för jag behöver inte rada upp dem-->
+					<li>
+						<a href="index.html"
 					><img
 						src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Hot_dog_with_mustard.png"
 						alt="Varmkorv som tar dig till första sidan"
-				/></a>
-				<ul>
+				/><!--har en img tagg för att ha fotot och en kort förklaring på vad fotot är-->
+			</a><!--Har ett <a href> element för att ha en bild i huvudmenyn som tar dig till starthemsidan.-->
+					</li>
 					<li>
 						<a href="MinaKonton.html">Mina konton</a>
 					</li>
@@ -42,32 +47,44 @@
 			</nav>
 		</header>
 		<main>
-			<div class="mainpart">
-				<p class="Intro">Detta är en hemsida om mig, Johan Johansson.</p>
-				<p class="Infoomsidan">
-					Denna sidan handlar om mig och har lite olika delar typ som en
-					<a href="OmMig.html">sida om mig</a>, en sida om
-					<a href="MinaKonton.html">mina konton</a> och en länk till
-					<a href="https://teknikum.se/">Teknikums hemsida</a>
-				</p>
-			</div>
-			<div class="bilder">
-				<img
-					src="https://media.istockphoto.com/id/155915641/sv/foto/grilled-barbecue-sausage.jpg?s=612x612&w=0&k=20&c=0oBrbRPkxVpaUQ_KVWPEDgADzahJixEeJL3b8Z3novg="
-					alt="En tysk släktning av varmkorven"
-				/>
+			<div class="huvuddelen">
+				<section>
+					<p class="Intro">Detta är en hemsida om mig, Johan Johansson.</p>
+				</section>
+				<section>
+					<p class="Infoomsidan">
+						Denna sidan handlar om mig och har lite olika delar typ som en
+						<a href="OmMig.html">sida om mig</a>, en sida om
+						<a href="MinaKonton.html">mina konton</a> och en länk till
+						<a href="https://teknikum.se/">Teknikums hemsida</a>
+					</p>
+				</section>
 			</div>
 		</main>
+		<aside>
+			<img
+			src="https://media.istockphoto.com/id/155915641/sv/foto/grilled-barbecue-sausage.jpg?s=612x612&w=0&k=20&c=0oBrbRPkxVpaUQ_KVWPEDgADzahJixEeJL3b8Z3novg="
+			alt="En tysk släktning av varmkorven"
+		/>
+
+		</aside>
 
 		<footer>
+			<div class="fotdel">
+			<section>
 			<p>Hemsidskapare: Johan Johansson</p>
 			<p>Skolan jag har blivit utbildad på heter Teknikum</p>
+		</section>
+		<section>
 			<h4>Mina kontaktuppgifter</h4>
 			<p class="mitt nummer">
 				076-820 20 08
 				<br />
 				<a href="jojo06002@utb.vaxjo.se"> jojo06002@utb.vaxjo.se </a>
 			</p>
+		</section>
+	</div>
 		</footer>
+	</div>
 	</body>
 </html>
