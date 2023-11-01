@@ -3,7 +3,6 @@ body {
   background-color: grey; /*gör bakgrundsfärgen till grått*/
   color: aqua; /*gör textfärgen till aqua*/
 }
-
 .helasidan {
   /*klassselektor som påverkar allting inom den klassen*/
   display: grid; /*säger till att det ska vara en i ett grid format*/
@@ -18,7 +17,6 @@ body {
   border-style: dotted; /*helasidans kant kommer se vara en prickig linje utmed hela*/
   height: 96vh; /*sätter helasidans höjd till 96vh, relativt till användarens skärms storlek, står för view-height*/
 }
-
 header {
   /*en typselektor för header*/
   background-color: aquamarine; /*ger en annan bakgrundsfärg till enbart header även om body har en annan färg*/
@@ -28,25 +26,21 @@ header {
   border-color: black;
   border-style: dotted;
 }
-
 header img {
   /*avkomlingsselektor används för att specifiera just img inom header barn, barnbarn eller vad som sålänge det är img inom header*/
   width: 120px; /*säger storleken av bilderna*/
   margin-top: -20px; /*tar bort avståndet över bilden, flyttar den så det ser finare ut*/
   margin-left: -20px; /*samma som margin-top men åt vänster om bilden*/
 }
-
 nav {
   /*typselektor för nav*/
   padding: 10px; /*mellanrum mellan elemenstkanten och självaste delarna i nav så att dem inte är för nära kanten*/
 }
-
 nav ul {
   /*påverkar den oornade listan i nav*/
   display: grid; /* gör en grid inom nav*/
   grid-template-columns: auto auto auto auto; /*detta gör att alla 4 kolumner fördelas automatiskt efter hur stora de är, och eftersom det endast är en rad så behöver jag inte specifiera raderna*/
 }
-
 nav ul li {
   /*li element i oordnad lista i nav*/
   margin-left: auto; /*ser till att avståndet till vänster och höger om li delarna blir automatiskt i mitten av sina fördelade bitar av gridden*/
@@ -55,19 +49,16 @@ nav ul li {
   list-style-type: none; /*ändrar om list typen till inget så att det inte är markeringar framför varje del i listan*/
   color: black; /*ändrar om texten i nav till svart så att det står ut mer*/
 }
-
 nav ul li a {
   /*anchor element inom list elemen inom oordnade listan inom nav*/
   padding: 10px;
   color: inherit;
   text-decoration: none; /*gör så att texten som är länkar ser ut som vanlig text och inte har understrykning*/
 }
-
 body ul li {
   /*list element inom oordnadlista inom body*/
   list-style-type: none;
 }
-
 .huvuddelen {
   /*klassselektor för huvuddelen*/
   display: grid; /*lägger till en grid inom klassen*/
@@ -80,7 +71,6 @@ body ul li {
   border-style: dotted;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; /*ändrar typsnittet på texten*/
 }
-
 aside {
   /*påverkar elementet aside*/
   grid-area: aside; /*säger till att det ska vara inom aside på grid*/
@@ -90,14 +80,12 @@ aside img {
   /*påverkar img inom aside*/
   max-width: 30vw; /*ger bilderna en maxstorlek på 30vw vilket är 30% av användarens skärms bredd*/
 }
-
 footer {
   /*väljer elemntet footer*/
   grid-area: footer; /*säger vart i grid footer ska vara*/
   border-color: black;
   border-style: dotted;
 }
-
 .fotdel {
   /*påverkar klaassen fotdel*/
   display: grid; /*gör en grid inom fotdel för att se till att allt är där jag vill ha det*/
@@ -109,7 +97,6 @@ footer {
   border-color: black;
   border-style: dotted;
 }
-
 table,
 td,
 th {
@@ -121,28 +108,23 @@ th {
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
 }
-
 caption {
   /*påverkar caption*/
   padding: 5px;
   font-size: 2em; /*är en relativ storlek som menar att den är dubbla storleken av elementets vanlgia typsnitts storlek*/
 }
-
 td:nth-child(odd) {
   /*påverkar de udda av td*/
   background-color: lightslategrey;
 }
-
 td:nth-child(even) {
   /*påverkar de jämna av td*/
   background-color: cornsilk;
 }
-
 th {
   /*påverkar alla th*/
   background-color: blue;
 }
-
 td:nth-child(1) {
   /*påverkar den första av td*/
   background-color: blueviolet !important; /*!important är här för jag kom inte på hur man ökar specificiteten på just denna annars*/
