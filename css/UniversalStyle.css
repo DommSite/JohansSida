@@ -55,10 +55,7 @@ nav ul li a {
   color: inherit;
   text-decoration: none; /*gör så att texten som är länkar ser ut som vanlig text och inte har understrykning*/
 }
-body ul li {
-  /*list element inom oordnadlista inom body*/
-  list-style-type: none;
-}
+
 .huvuddelen {
   /*klassselektor för huvuddelen*/
   display: grid; /*lägger till en grid inom klassen*/
